@@ -1,0 +1,103 @@
+/*---------------
+Websites Parameters
+-----------------*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+/*---------------
+     Header
+-----------------*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkblue;
+    padding: 30px;
+}
+a, li, button{
+    text-decoration: none;
+    color:white;
+}
+.nav-links li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-links li a {
+    margin: 10px 15px;
+}
+.nav-links li a:hover {
+        color:red;
+}
+button{
+    background-color: rgb(241, 59, 90);
+    margin-right: 40px;
+    padding: 6px 20px;
+
+}
+/*---------------
+  Introdcution
+-----------------*/
+.intro{
+    background-color: darkblue;
+    display:flex;
+    cursor:pointer;
+}
+.intro-1 {
+    padding: 100px 60px;
+}
+.intro-1 h1:hover{
+    color: red;
+}
+.intro-1 h1{
+    font-size: 2.5rem;
+    color: white;
+    font-weight:bolder;
+    transition: font-size 2s ease 0.2s;
+}
+.intro:hover .intro-1 h1{
+    font-size: 3rem;
+}
+.banner{
+    width: 556px;
+    height: 438px;
+    margin-left: 400px;
+    margin-top: 30px;
+    transition: width 2s transform 0.3s;  
+
+}
+.intro:hover .banner{
+    transform:rotate(30deg);
+}
+
+/*---------------
+ Players Part Styles
+-----------------*/
+.container{
+    background-color:white;
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+.players{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.player{
+align-items: center;
+padding: 10px;
+width: 300px;
+height: 350px;
+background: #FFFFFF;
+box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+margin-bottom: 20px;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+
