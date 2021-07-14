@@ -17,10 +17,7 @@ header{
     background-color:darkblue;
     padding: 30px;
 }
-a, li, button{
-    text-decoration: none;
-    color:white;
-}
+
 .nav-links li{
     list-style:none;
     display: inline-block;
@@ -38,8 +35,12 @@ button{
     padding: 6px 20px;
 
 }
+a, li, button{
+    text-decoration: none;
+    color:white;
+}
 /*---------------
-  Introdcution
+  Introduction
 -----------------*/
 .intro{
     background-color: darkblue;
@@ -49,15 +50,16 @@ button{
 .intro-1 {
     padding: 100px 60px;
 }
-.intro-1 h1:hover{
-    color: red;
-}
 .intro-1 h1{
     font-size: 2.5rem;
     color: white;
     font-weight:bolder;
     transition: font-size 2s ease 0.2s;
 }
+.intro-1 h1:hover{
+    color: red;
+}
+
 .intro:hover .intro-1 h1{
     font-size: 3rem;
 }
@@ -79,7 +81,7 @@ button{
 .container{
     background-color:white;
     margin-top: 40px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 50px;
 }
 .players{
@@ -101,3 +103,106 @@ margin-bottom: 20px;
     height: 256px;
 }
 
+/*---------------
+ Highlights Part Style
+-----------------*/
+
+.highlights{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 90px;
+    padding: 90px;
+
+}
+.highlights img{
+    width: 580px;
+    height: 427px;
+}
+.copa-america{
+    width: 466px;
+    height: 309px;
+    bottom: 100px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+/*---------------
+ Sponsers Part Style
+-----------------*/
+.sponsers{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.mastercard img{
+    width:400px;
+    height: 300px;
+}
+.betssongroup img{
+    width: 300px;
+    height: 300px;
+}
+.sponsers h1{
+    font-size:2.5rem;
+    font-weight:bolder;
+    transition: font-size 2s ease-out .2s;
+}
+.sponsers h1:hover{
+    font-size:3rem;
+    color: red;
+}
+/*---------------
+ footer Part Style
+-----------------*/
+footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+margin-top: 25px;
+}
+.logo img{
+    width: 227.82px;
+    height: 67.42px;
+}
+.social-media-icon{
+display:flex;
+justify-content: center;
+align-items:center;
+}
+.social-media{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(221, 214, 214);
+    text-align:center;
+    padding: 10px;
+    margin:15px;
+    border-radius:100px;
+    
+}
+
+/*--------------------
+   Media-Queries
+----------------------*/
+
+/*Mobile devices*/
+@media screen and (max-width: 688px) {
+
+    .nav-links li, .intro, .banner, .players, .highlights, .sponsers  {
+        display:block;
+        flex-direction:column;
+        margin:0;
+        width: 100%;
+        transition:none;
+        transform:none;
+    }
+    .nav-links li, .intro, .players, .highlights, .sponsers  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+    
+}
